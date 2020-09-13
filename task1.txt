@@ -1,0 +1,34 @@
+using System;
+					
+public class Fracture
+{
+ public static void Main()
+	{
+ Fracture fracture = new Fracture();
+ double numerator = fracture.setNumerator();
+ double denumerator = fracture.setDenominator();
+ fracture.makeOperations(numerator,denumerator);
+	}
+ public double setNumerator(){
+ Console.Write("Enter Numerator: ");
+ double numerator = Convert.ToDouble(Console.ReadLine());
+ return numerator;
+	}
+ public double setDenominator(){
+ Console.Write("Enter Denominator:");
+ double denominator = Convert.ToDouble(Console.ReadLine());
+ return denominator;
+	}
+ public void makeOperations(double numerator, double denumerator){
+ Console.WriteLine("Sum");
+ Console.WriteLine(numerator + denumerator);
+ Console.WriteLine("Diff");
+ Console.WriteLine(numerator - denumerator);
+ Console.WriteLine("Multiplication");
+ Console.WriteLine(numerator * denumerator);
+ Console.WriteLine("Division");
+ Console.WriteLine(numerator / denumerator);
+
+	}
+		
+}
